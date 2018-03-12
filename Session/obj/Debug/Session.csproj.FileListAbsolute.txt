@@ -1,0 +1,16 @@
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\bin\Debug\Session.dll
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\bin\Debug\Session.pdb
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\bin\Debug\Domain.dll
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\bin\Debug\Domain.pdb
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\obj\Debug\Session.csproj.CoreCompileInputs.cache
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\obj\Debug\Session.dll
+D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Session\obj\Debug\Session.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\bin\Debug\Session.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\bin\Debug\Session.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\bin\Debug\Domain.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\bin\Debug\Domain.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\obj\Debug\Session.csproj.CoreCompileInputs.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\obj\Debug\Session.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Session\obj\Debug\Session.pdb

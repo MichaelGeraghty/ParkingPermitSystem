@@ -31,9 +31,9 @@ namespace Session
         {
             try
             {
-                command.CommandText = "INSERT INTO Permits (Student_ID,Vehicle_Model,Registration,Owner,Parking_Space) " +
+                command.CommandText = "INSERT INTO Permits (Student_ID,Vehicle_Model,Registration,Owner,Parking_Space,Due_Date) " +
                     "VALUES('" + permit.Student_ID + "', '" + permit.Vehicle_Model + "', '" + permit.Registration + "','" 
-                    + permit.Owner + "', '" + permit.Parking_Space + "')";
+                    + permit.Owner + "', '" + permit.Parking_Space + "', '" + permit.Due_Date + "')";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -123,7 +123,7 @@ namespace Session
             {
                 command.CommandText = "UPDATE Permits SET Student_ID ="+ newPermit.Student_ID+",Vehicle_Model =\""
                     + newPermit.Vehicle_Model+"\",Registration =\"" + newPermit.Registration+"\",Owner =\""+ newPermit.Owner
-                    +"\",Parking_Space ="+ newPermit.Parking_Space+" WHERE Student_ID =" + newPermit.Student_ID;
+                    +"\",Parking_Space ="+ newPermit.Parking_Space+ ",Due_Date =\"" + newPermit.Due_Date + "\" WHERE Student_ID =" + newPermit.Student_ID;
                 command.CommandType = CommandType.Text;
                 connection.Open();
 

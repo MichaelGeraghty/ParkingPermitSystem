@@ -24,6 +24,7 @@ namespace ParkingPermit
             String reg;
             String owner;
             int parkingSpace;
+            DateTime due_date;
             int option;
 
             //Menu option
@@ -46,8 +47,15 @@ namespace ParkingPermit
                     owner = Console.ReadLine();
                     Console.WriteLine("Enter Parking Space number: ");
                     parkingSpace = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Day: ");
+                    var day = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Month: ");
+                    var month = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Year: ");
+                    var year = Convert.ToInt32(Console.ReadLine());
+                    due_date = new DateTime(year, month, day);
 
-                    business.Insert(studentID, model, reg, owner, parkingSpace);
+                    business.Insert(studentID, model, reg, owner, parkingSpace,due_date);
                 }
                 //show table contents
                 else if (option == 2)
@@ -67,8 +75,17 @@ namespace ParkingPermit
                     owner = Console.ReadLine();
                     Console.WriteLine("Enter Parking Space number: ");
                     parkingSpace = Convert.ToInt32(Console.ReadLine());
+                    
+                    Console.WriteLine("Enter Due Date");
+                    Console.WriteLine("Day: ");
+                    var day = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Month: ");
+                    var month = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Year: ");
+                    var year = Convert.ToInt32(Console.ReadLine());
+                    due_date = new DateTime(year, month, day);
 
-                    business.Update(studentID, model, reg, owner, parkingSpace);
+                    business.Update(studentID, model, reg, owner, parkingSpace,due_date);
                 }
                 //delete an entry
                 else if (option == 4)

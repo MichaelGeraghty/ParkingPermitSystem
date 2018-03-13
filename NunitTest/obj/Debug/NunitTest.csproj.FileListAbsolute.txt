@@ -1,0 +1,13 @@
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\Domain.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\nunit.framework.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\Session.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\Domain.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\Session.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\obj\Debug\NunitTest.csprojResolveAssemblyReference.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\obj\Debug\NunitTest.csproj.CoreCompileInputs.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\obj\Debug\NunitTest.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\obj\Debug\NunitTest.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\Business.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\Business.pdb

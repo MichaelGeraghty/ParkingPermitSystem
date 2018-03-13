@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-03-13" time="20:27:44">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8825" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\Program Files (x86)\NUnit-2.6.4\bin" machine-name="DESKTOP-SS5MR12" user="micha" user-domain="DESKTOP-SS5MR12" />
+  <culture-info current-culture="en-IE" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll" executed="True" result="Failure" success="False" time="0.159" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="NunitTest" executed="True" result="Failure" success="False" time="0.151" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Test" executed="True" result="Failure" success="False" time="0.150" asserts="0">
+            <results>
+              <test-case name="NunitTest.Test.TestShowTable" executed="True" result="Error" success="False" time="0.141" asserts="0">
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.]]></message>
+                  <stack-trace><![CDATA[at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+at System.Data.OleDb.OleDbConnection.Open()
+at Session.Broker.ShowTable() in D:\NUIG\NET\workspace\ParkingPermitSystem\Session\Broker.cs:line 86
+at Business.Bll.ShowTable() in D:\NUIG\NET\workspace\ParkingPermitSystem\Business\Bll.cs:line 46
+at NunitTest.Test.TestShowTable() in D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\Test.cs:line 22
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

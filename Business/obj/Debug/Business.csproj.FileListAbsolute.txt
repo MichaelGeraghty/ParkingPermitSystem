@@ -1,0 +1,10 @@
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\bin\Debug\Business.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\bin\Debug\Business.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\bin\Debug\Domain.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\bin\Debug\Session.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\bin\Debug\Domain.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\bin\Debug\Session.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\obj\Debug\Business.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Business\obj\Debug\Business.pdb

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain;
+using Business;
 using Session;
 
 namespace ParkingPermit
@@ -13,6 +14,7 @@ namespace ParkingPermit
         //Broker instance which provides the connection to and operaters to the access database
         //Connections are made and closed as an operation is called rather than connecting and holding connection till disconnect
         public static Broker b = new Broker();
+        public static Bll business = new Bll();
         
         public static void Main(string[] args)
         {
@@ -45,12 +47,12 @@ namespace ParkingPermit
                     Console.WriteLine("Enter Parking Space number: ");
                     parkingSpace = Convert.ToInt32(Console.ReadLine());
 
-                    Insert(studentID, model, reg, owner, parkingSpace);
+                    business.Insert(studentID, model, reg, owner, parkingSpace);
                 }
                 //show table contents
                 else if (option == 2)
                 {
-                    ShowTable();
+                    business.ShowTable();
                 }
                 //update an entry
                 else if (option == 3)
@@ -66,7 +68,7 @@ namespace ParkingPermit
                     Console.WriteLine("Enter Parking Space number: ");
                     parkingSpace = Convert.ToInt32(Console.ReadLine());
 
-                    Update(studentID, model, reg, owner, parkingSpace);
+                    business.Update(studentID, model, reg, owner, parkingSpace);
                 }
                 //delete an entry
                 else if (option == 4)
@@ -74,7 +76,7 @@ namespace ParkingPermit
                     Console.WriteLine("Enter Student ID to delete: ");
                     studentID = Convert.ToInt32(Console.ReadLine());
 
-                    b.Delete(studentID);
+                    business.Delete(studentID);
                 }
                 //subsequent request for option
                 Console.WriteLine("Enter 1 to insert an entry, 2 to show entries, 3 to update an entry and 4 to delete an entry");
@@ -84,38 +86,6 @@ namespace ParkingPermit
 
             Console.ReadLine();
         }
-
-       //insert takes the elements necessary to create a valid permit and passes this permit to the broker to be inserted into the database
-        private static void Insert(int studentID, string model, string reg, string owner, int parkingSpace)
-        {
-            Permit permit = new Permit();
-            permit.Student_ID = studentID;
-            permit.Vehicle_Model = model;
-            permit.Registration = reg;
-            permit.Owner = owner;
-            permit.Parking_Space = parkingSpace;
-
-            b.Insert(permit);
-        }
-        //update takes the elements necessary to update a valid permit and passes this permit to the broker to update
-        private static void Update(int studentID, string model, string reg, string owner, int parkingSpace)
-        {
-            Permit newPermit = new Permit();
-
-            newPermit.Student_ID = studentID;
-            newPermit.Vehicle_Model = model;
-            newPermit.Registration = reg;
-            newPermit.Owner = owner;
-            newPermit.Parking_Space = parkingSpace;
-
-            b.Update(newPermit);
-        }
-        //calling the show table of our broker
-        private static void ShowTable()
-        {
-            b.ShowTable();
-        }
-        
-
+       
     }
 }

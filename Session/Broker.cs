@@ -72,6 +72,7 @@ namespace Session
                     permit.Registration = reader["Registration"].ToString();
                     permit.Owner = reader["Owner"].ToString();
                     permit.Parking_Space = Convert.ToInt32(reader["Parking_Space"].ToString());
+                    permit.Due_Date = Convert.ToDateTime(reader["Due_Date"].ToString());
 
                     permitList.Add(permit);
                 }

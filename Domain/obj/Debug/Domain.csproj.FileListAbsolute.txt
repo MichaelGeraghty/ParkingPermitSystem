@@ -4,3 +4,9 @@ D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Domain\obj\Debug\Domain.csproj
 D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
 D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Domain\obj\Debug\Domain.dll
 D:\NUIG\NET\workspace\ParkingPermit\ParkingPermit\Domain\obj\Debug\Domain.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Domain\bin\Debug\Domain.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Domain\bin\Debug\Domain.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\NUIG\NET\workspace\ParkingPermitSystem\Domain\obj\Debug\Domain.dll
+D:\NUIG\NET\workspace\ParkingPermitSystem\Domain\obj\Debug\Domain.pdb

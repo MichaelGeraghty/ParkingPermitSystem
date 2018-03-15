@@ -141,6 +141,62 @@ namespace Session
                 }
             }
         }
+        public int Count()
+        {
+            try
+            {
+                command.CommandText = "SELECT COUNT (*) FROM Permits";
+                command.CommandType = CommandType.Text;
+                connection.Open();
+
+                Int32 count = (Int32)command.ExecuteScalar();
+
+                //command.CommandText = "SELECT COUNT (*) FROM Permits WHERE Due_Date >= CURDATE()";
+                //command.CommandType = CommandType.Text;
+
+               // Int32 validCount = (Int32)command.ExecuteScalar();
+
+                
+                return count;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection != null)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        public int ValidCount()
+        {
+            try
+            {
+
+                command.CommandText = "SELECT COUNT (*) FROM Permits WHERE Due_Date >= NOW();";
+                command.CommandType = CommandType.Text;
+                connection.Open();
+                 Int32 validCount = (Int32)command.ExecuteScalar();
+
+
+                return validCount;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection != null)
+                {
+                    connection.Close();
+                }
+            }
+        }
 
     }
 

@@ -24,6 +24,22 @@ namespace Business
 
             b.Insert(permit);
         }
+        public int CalculateAverage()
+        {
+            double valid = Convert.ToDouble(getNumberValidPermits());
+            double total = Convert.ToDouble(getNumberPermits());
+            double percent = valid / total;
+
+            return Convert.ToInt32(percent*100);
+        }
+        public int getNumberPermits()
+        {
+            return b.Count();
+        }
+        public int getNumberValidPermits()
+        {
+            return b.ValidCount();
+        }
 
         //update takes the elements necessary to update a valid permit and passes this permit to the broker to update
         public void Update(int studentID, string model, string reg, string owner, int parkingSpace, DateTime due_date)

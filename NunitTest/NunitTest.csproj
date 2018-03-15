@@ -51,14 +51,6 @@
       <Project>{5d591b37-6aa5-4abf-8d84-2e390c25ec58}</Project>
       <Name>Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{7a0b5ffe-a4d0-461e-ab4b-110a911ec1b3}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Session\Session.csproj">
-      <Project>{3bd4fd0d-a034-4a11-a848-a7f61ceccf88}</Project>
-      <Name>Session</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

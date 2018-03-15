@@ -28,7 +28,8 @@ namespace ParkingPermit
             int option;
 
             //Menu option
-            Console.WriteLine("Enter 1 to insert an entry, 2 to show entries, 3 to update an entry, 4 to delete an entry and 0 to exit");
+            Console.WriteLine("Enter 1 to insert an entry, 2 to show entries, 3 to update an entry, 4 to delete an entry,\n" +
+                " 5 to calculate percent of valid utilised Permits, 6 to Determine fees due, 7 to determine number of unique vehicle models and 0 to exit");
             Console.WriteLine("Enter an option");
             option = Convert.ToInt32(Console.ReadLine());
             //while the entry is not 0 keep asking for an option
@@ -95,8 +96,21 @@ namespace ParkingPermit
 
                     business.Delete(studentID);
                 }
+                else if (option == 5)
+                {
+                    Console.WriteLine(business.PrintPercent());
+                }
+                else if (option == 6)
+                {
+                    business.CollectFees();
+                }
+                else if (option == 7)
+                {
+                    business.UniqueVehicles();
+                }
                 //subsequent request for option
-                Console.WriteLine("Enter 1 to insert an entry, 2 to show entries, 3 to update an entry and 4 to delete an entry");
+                Console.WriteLine("Enter 1 to insert an entry, 2 to show entries, 3 to update an entry and 4 to delete an entry," +
+                    "\n 5 to calculate percent of valid utilised Permits, 6 to Determine fees due, 7 to determine number of unique vehicle models");
                 Console.WriteLine("Enter an option");
                 option = Convert.ToInt32(Console.ReadLine());
             }

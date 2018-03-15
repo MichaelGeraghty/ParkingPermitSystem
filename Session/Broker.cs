@@ -151,12 +151,6 @@ namespace Session
 
                 Int32 count = (Int32)command.ExecuteScalar();
 
-                //command.CommandText = "SELECT COUNT (*) FROM Permits WHERE Due_Date >= CURDATE()";
-                //command.CommandType = CommandType.Text;
-
-               // Int32 validCount = (Int32)command.ExecuteScalar();
-
-                
                 return count;
             }
             catch (Exception)
@@ -184,6 +178,79 @@ namespace Session
 
 
                 return validCount;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection != null)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        public List<Permit> CalculateFees()
+        {
+            List<Permit> feeCollectionList = new List<Permit>();
+            try
+            {
+                command.CommandText = "SELECT * FROM Permits WHERE Due_Date < NOW();";
+                command.CommandType = CommandType.Text;
+                connection.Open();
+
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Permit permit = new Permit();
+
+                    permit.Student_ID = Convert.ToInt32(reader["Student_ID"].ToString());
+                    permit.Vehicle_Model = reader["Vehicle_Model"].ToString();
+                    permit.Registration = reader["Registration"].ToString();
+                    permit.Owner = reader["Owner"].ToString();
+                    permit.Parking_Space = Convert.ToInt32(reader["Parking_Space"].ToString());
+                    permit.Due_Date = Convert.ToDateTime(reader["Due_Date"].ToString());
+
+                    feeCollectionList.Add(permit);
+                }
+
+                return feeCollectionList;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection != null)
+                {
+                    connection.Close();
+                }
+            }
+        }
+        //returns unique vehicle models
+        public List<String> GetUniqueCars()
+        {
+            List<String> uniqueList = new List<String>();
+            try
+            {
+                command.CommandText = "SELECT DISTINCT Vehicle_Model FROM Permits";
+                command.CommandType = CommandType.Text;
+                connection.Open();
+
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    String Vehicle_Model = reader["Vehicle_Model"].ToString();
+
+                    uniqueList.Add(Vehicle_Model);
+                }
+
+                return uniqueList;
             }
             catch (Exception)
             {

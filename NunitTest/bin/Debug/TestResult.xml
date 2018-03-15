@@ -1,18 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-03-15" time="12:01:24">
+<test-results name="D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-03-15" time="14:34:13">
   <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8825" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\Program Files (x86)\NUnit-2.6.4\bin" machine-name="DESKTOP-SS5MR12" user="micha" user-domain="DESKTOP-SS5MR12" />
   <culture-info current-culture="en-IE" current-uiculture="en-GB" />
-  <test-suite type="Assembly" name="D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll" executed="True" result="Success" success="True" time="1.003" asserts="0">
+  <test-suite type="Assembly" name="D:\NUIG\NET\workspace\ParkingPermitSystem\NunitTest\bin\Debug\NunitTest.dll" executed="True" result="Success" success="True" time="0.566" asserts="0">
     <results>
-      <test-suite type="Namespace" name="NunitTest" executed="True" result="Success" success="True" time="0.995" asserts="0">
+      <test-suite type="Namespace" name="NunitTest" executed="True" result="Success" success="True" time="0.565" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="Test" executed="True" result="Success" success="True" time="0.994" asserts="0">
+          <test-suite type="TestFixture" name="Test" executed="True" result="Success" success="True" time="0.565" asserts="0">
             <results>
-              <test-case name="NunitTest.Test.getTotalPermits" executed="True" result="Success" success="True" time="0.322" asserts="1" />
-              <test-case name="NunitTest.Test.getValidPermits" executed="True" result="Success" success="True" time="0.081" asserts="1" />
-              <test-case name="NunitTest.Test.TestCalculateAverage" executed="True" result="Success" success="True" time="0.171" asserts="1" />
-              <test-case name="NunitTest.Test.TestInsertUpdateDelete" executed="True" result="Success" success="True" time="0.297" asserts="0" />
+              <test-case name="NunitTest.Test.getTotalPermits" executed="True" result="Success" success="True" time="0.043" asserts="1" />
+              <test-case name="NunitTest.Test.getValidPermits" executed="True" result="Success" success="True" time="0.048" asserts="1" />
+              <test-case name="NunitTest.Test.TestCalculateAverage" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+              <test-case name="NunitTest.Test.TestCalculateFees" executed="True" result="Success" success="True" time="0.046" asserts="0" />
+              <test-case name="NunitTest.Test.TestInsertUpdateDelete" executed="True" result="Success" success="True" time="0.153" asserts="0" />
+              <test-case name="NunitTest.Test.TestPrintPercent" executed="True" result="Success" success="True" time="0.097" asserts="0" />
+              <test-case name="NunitTest.Test.TestUniqueVehicles" executed="True" result="Success" success="True" time="0.049" asserts="0" />
             </results>
           </test-suite>
         </results>

@@ -50,6 +50,21 @@ namespace NunitTest
         {
             Assert.AreEqual(businessTest.CalculateAverage(), 57);
         }
+        [Test]
+        public void TestPrintPercent()
+        {
+            businessTest.PrintPercent();
+        }
+        [Test]
+        public void TestCalculateFees()
+        {
+            businessTest.CollectFees();
+        }
+        [Test]
+        public void TestUniqueVehicles()
+        {
+            businessTest.UniqueVehicles();
+        }
         
         
     }

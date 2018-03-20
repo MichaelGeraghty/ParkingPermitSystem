@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Permit
 {
+    //permit 
     public class Permit
     {
+        //variables
         int student_ID;
         String vehicle_Model;
         String registration;
         String owner;
         int parking_Space;
-
+        //getters and setters
         public int Student_ID { get => student_ID; set => student_ID = value; }
         public string Vehicle_Model { get => vehicle_Model; set => vehicle_Model = value; }
         public string Registration { get => registration; set => registration = value; }

@@ -11,11 +11,10 @@ namespace ParkingPermit
 {
     class Program
     {
-        //Broker instance which provides the connection to and operaters to the access database
-        //Connections are made and closed as an operation is called rather than connecting and holding connection till disconnect
-        public static Broker b = new Broker();
+        //Access to Business layer methods
         public static Bll business = new Bll();
         
+        //Console Menu that interacts with business layer
         public static void Main(string[] args)
         {
             //variables
@@ -96,14 +95,17 @@ namespace ParkingPermit
 
                     business.Delete(studentID);
                 }
+                //Returns the percent of valid (in date ) permits in the system currently
                 else if (option == 5)
                 {
                     Console.WriteLine(business.PrintPercent());
                 }
+                //Returns all permits out of date and returns fee incured depending on time due
                 else if (option == 6)
                 {
                     business.CollectFees();
                 }
+                //Returns unique vehicle models currently held by the system
                 else if (option == 7)
                 {
                     business.UniqueVehicles();

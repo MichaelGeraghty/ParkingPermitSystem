@@ -11,6 +11,7 @@ namespace Session
 {
     public class Broker
     {
+        //OleDb
         OleDbConnection connection;
         OleDbCommand command;
         //create a connection to our access db
@@ -141,6 +142,7 @@ namespace Session
                 }
             }
         }
+        //count number of permits in the system
         public int Count()
         {
             try
@@ -165,7 +167,7 @@ namespace Session
                 }
             }
         }
-
+        //count number of permits with due date in date and valid
         public int ValidCount()
         {
             try
@@ -191,7 +193,7 @@ namespace Session
                 }
             }
         }
-
+        //return a list of permits along with fee incured from being out of date
         public List<Permit> CalculateFees()
         {
             List<Permit> feeCollectionList = new List<Permit>();

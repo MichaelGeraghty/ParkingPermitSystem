@@ -41,17 +41,17 @@ namespace NunitTest
            Assert.AreEqual(businessTest.getNumberPermits(),7);
            
         }
-        //get valid permits = 4 at time of testing (passed)
+        //get valid permits = 3 at time of testing (passed)
         [Test]//passed
         public void getValidPermits()
         {
-            Assert.AreEqual(businessTest.getNumberValidPermits(), 4);
+            Assert.AreEqual(businessTest.getNumberValidPermits(), 3);
         }
-        //return percent of valid permits in system at time of test average will be 57%
+        //return percent of valid permits in system at time of test average will be 43%
         [Test]//passed
         public void TestCalculateAverage()
         {
-            Assert.AreEqual(businessTest.CalculateAverage(), 57);
+            Assert.AreEqual(businessTest.CalculateAverage(), 43);
         }
         //Print the correct percentage 57 from above
         [Test]//passed

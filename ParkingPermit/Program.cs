@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 using Domain;
 using Business;
 using Session;
+using System.Windows.Forms;
 
 namespace ParkingPermit
 {
     class Program
     {
+
         //Access to Business layer methods
         public static Bll business = new Bll();
         
         //Console Menu that interacts with business layer
         public static void Main(string[] args)
         {
+            Application.Run(new PermitSystem());
             //variables
             int studentID;
             String model;

@@ -14,6 +14,7 @@ namespace Session
         //OleDb
         OleDbConnection connection;
         OleDbCommand command;
+        String query = "";
         //create a connection to our access db
         private void ConnectTo()
         {
@@ -53,7 +54,7 @@ namespace Session
             }
         }
         //show table creates an arraylist of permits that we read in from the database to be displayed to the user
-        public void ShowTable()
+        public DataTable ShowTable()
         {
             List<Permit> permitList = new List<Permit>();
             try
@@ -63,6 +64,16 @@ namespace Session
                 connection.Open();
 
                 OleDbDataReader reader = command.ExecuteReader();
+
+                query = "SELECT * FROM Permits";
+                OleDbCommand cmd = new OleDbCommand(query, connection);
+                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+
+                da.SelectCommand = cmd;
+
+                da.Fill(dt);
 
                 while (reader.Read())
                 {
@@ -81,6 +92,7 @@ namespace Session
                 foreach(Permit element in permitList){
                     Console.WriteLine(element.ToString());
                 }
+                return (dt);
             }
             catch (Exception)
             {

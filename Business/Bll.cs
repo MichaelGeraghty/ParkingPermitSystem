@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Session;
 using Domain;
+using System.Data;
 
 namespace Business
 {
@@ -99,9 +100,9 @@ namespace Business
         }
 
         //calling the show table of our broker
-        public void ShowTable()
+        public DataTable ShowTable()
         {
-            b.ShowTable();
+            return b.ShowTable();
         }
         //calling delete entry
         public void Delete(int studentID)

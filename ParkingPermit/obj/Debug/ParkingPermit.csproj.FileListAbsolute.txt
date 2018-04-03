@@ -22,3 +22,5 @@ D:\NUIG\NET\workspace\ParkingPermitSystem\ParkingPermit\obj\Debug\ParkingPermit.
 D:\NUIG\NET\workspace\ParkingPermitSystem\ParkingPermit\obj\Debug\ParkingPermit.pdb
 D:\NUIG\NET\workspace\ParkingPermitSystem\ParkingPermit\bin\Debug\Business.dll
 D:\NUIG\NET\workspace\ParkingPermitSystem\ParkingPermit\bin\Debug\Business.pdb
+D:\NUIG\NET\workspace\ParkingPermitSystem\ParkingPermit\obj\Debug\ParkingPermit.PermitSystem.resources
+D:\NUIG\NET\workspace\ParkingPermitSystem\ParkingPermit\obj\Debug\ParkingPermit.csproj.GenerateResource.Cache
